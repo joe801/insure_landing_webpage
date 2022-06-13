@@ -1,0 +1,46 @@
+:root {
+	--main-color: hsl(256, 26%, 20%);
+	--grayish-blue: hsl(216, 30%, 68%);
+	--very-dark-violet: hsl(270, 9%, 17%);
+	--very-light-gray: hsl(0, 0%, 98%);
+	--dark-grayish-violet: hsl(273, 4%, 51%);
+}
+
+/* Navbar styling */
+
+nav{
+	font-size: 12px;
+}
+
+#insure{
+	margin-left: 7rem;
+	font-weight: 600;
+	color: var(--very-dark-violet);
+}
+
+#nav-lists{
+	margin-right: 10rem;
+	color: var(--grayish-blue);
+}
+
+nav #nav-lists li{
+	margin-left: 1rem;
+}
+
+/* hba for how we work, blog, account */
+#nav-lists .hba:hover{
+	color: var(--very-dark-violet);
+	font-weight: bold;
+}
+
+#view{
+	border: 1px solid var(--very-dark-violet);
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#view:hover{
+	background-color: var(--very-dark-violet);
+	color: var(--very-light-gray);
+}
+
