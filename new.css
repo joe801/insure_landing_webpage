@@ -17,16 +17,12 @@ body{
 
 /* navbar styling */
 
-#navbar{
-
-}
-
 #navbar .logo{
 	display: flex;
 	background-color: var(--very-light-gray);
 	justify-content: space-between;
 	position: fixed;
-	z-index: 1999;
+	z-index: 999;
 	width: 100%;
 }
 
@@ -89,34 +85,6 @@ body{
 	top: 0;
 	left: 0;
 }
-
-/*
-#active{
-	position: fixed;
-	height: 100vh;
-	width: 100%;
-	background-color: var(--main-color);
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-	display: none;
-}
-
-#active p{
-	color: var(--very-light-gray);
-	padding-top: 2rem;
-}
-
-#active .view{
-	background-color: transparent;
-	color: var(--very-light-gray);
-	border: 1px solid var(--very-light-gray);
-	padding: 0.5rem 1rem;
-	margin-top: 2rem;
-	width: 70vw;
-	text-align: center;
-	align-items: center;
-} */
 
 /* homepage styling */
 
@@ -305,6 +273,8 @@ footer .details:hover{
 	cursor: pointer;
 }
 
+ /* tablet styling */
+
 @media only screen and (min-width: 769px){
 	body{
 		font-size: 20px;
@@ -327,6 +297,8 @@ footer .details:hover{
 		margin-bottom: 3rem;
 	}
 }
+
+/* laptop styling */
 
 @media only screen and (min-width: 1000px){
 	body{
