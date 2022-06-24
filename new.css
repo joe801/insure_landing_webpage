@@ -38,10 +38,6 @@ body{
 	z-index: 999;
 }
 
-#navbar .nav-hide .cancel{
-	display: none;
-}
-
 #navbar .nav-hide i{
 	width: 100%;
 	height: 100%;
