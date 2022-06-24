@@ -6,16 +6,19 @@
 	<title>Frontend Mentor | Insure landing page<</title>
 	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 	<link rel="stylesheet" type="text/css" href="new.css">
+	<script src="https://kit.fontawesome.com/e55806560e.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
 	<header>
 		 <!-- Navbar -->
 		<nav id="navbar">
-		    <h1 class="title">INSURE</h1>
-		    <div class="nav-hide">
-		    	===
-		    </div>
+			<div class="logo">
+				<h1 class="title">INSURE</h1>
+				<div class="nav-hide" id="nav-btn">
+					<i class="fas fa-bars"></i>
+				</div>
+			</div>
 		    <div class="title-tab">
 			    <p class="tab-text">HOW WE WORK</p>
 			    <p class="tab-text">BLOG</p>
@@ -25,8 +28,16 @@
 		    </div>
 		</nav>
 	</header>
+<!--
+	<div id="active">
+		<p class="tab-text">HOW WE WORK</p>
+		<p class="tab-text">BLOG</p>
+		<p class="tab-text">HOW WE WORK</p>
+		<p class="tab-text">ACCOUNT</p>
+		<p class="tab-text view"> VIEW PLANS </p>
+	</div> -->
 
-	<main>
+	<main id="main">
 
 		 <!-- Intro page -->
 
@@ -97,7 +108,7 @@
 		</section>
 	</main>
 
-	<footer>
+	<footer id="footer">
 		<div class="head-contain">
 			<h2 class="insure">INSURE</h2>
 			<div class="icons">
@@ -142,5 +153,8 @@
 	        </div>
 		</div>
 	</footer>
+
+	<script src="jquery3.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
 </body>
 </html>

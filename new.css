@@ -18,8 +18,16 @@ body{
 /* navbar styling */
 
 #navbar{
+
+}
+
+#navbar .logo{
 	display: flex;
+	background-color: var(--very-light-gray);
 	justify-content: space-between;
+	position: fixed;
+	z-index: 1999;
+	width: 100%;
 }
 
 #navbar .title{
@@ -28,15 +36,87 @@ body{
 }
 
 #navbar .nav-hide{
-	margin: 1.5rem;
+	margin: 1.2rem 2rem;
 	width: 1.6rem;
-	height: 1.5rem;
+	height: 1.3rem;
+	z-index: 999;
+}
+
+#navbar .nav-hide .cancel{
+	display: none;
+}
+
+#navbar .nav-hide i{
+	width: 100%;
+	height: 100%;
+	padding: 10px 0 5px 10px;
+	z-index: 10;
 	border: 2px solid var(--very-dark-violet);
 }
 
+#navbar #nav-btn i.active:before{
+    content: "\f00d";
+}
+
 #navbar .title-tab{
+	position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: -150%;
+    top: 0;
+    background: var(--main-color);
+    text-align: center;
+    padding-top: 80px;
+    transition: all 0.3s ease;
+    color: var(--very-light-gray);
+	z-index: 9;
+}
+
+#navbar .title-tab p{
+	margin-top: 2rem;
+}
+
+#navbar .view{
+	background-color: transparent;
+	color: var(--very-light-gray);
+	padding: 0.5rem 1rem;
+	border: 1px solid var(--very-light-gray);
+	width: 70%;
+	margin: 0 auto;
+}
+
+#navbar .active{
+	top: 0;
+	left: 0;
+}
+
+/*
+#active{
+	position: fixed;
+	height: 100vh;
+	width: 100%;
+	background-color: var(--main-color);
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
 	display: none;
 }
+
+#active p{
+	color: var(--very-light-gray);
+	padding-top: 2rem;
+}
+
+#active .view{
+	background-color: transparent;
+	color: var(--very-light-gray);
+	border: 1px solid var(--very-light-gray);
+	padding: 0.5rem 1rem;
+	margin-top: 2rem;
+	width: 70vw;
+	text-align: center;
+	align-items: center;
+} */
 
 /* homepage styling */
 
@@ -225,10 +305,15 @@ footer .details:hover{
 	cursor: pointer;
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 769px){
 	body{
 		font-size: 20px;
 	}
+
+	#active{
+		display: none;
+	}
+
 	#homepage .homepage{
 		padding: 5rem;
 	}
@@ -251,20 +336,46 @@ footer .details:hover{
 	#navbar .nav-hide{
 		display: none;
 	}
+	#navbar{
+		display: flex;
+		justify-content: space-between;
+	}
+	#navbar .logo{
+		width: unset;
+		z-index: unset;
+		position: unset;
+		background-color: unset;
+	}
 	#navbar .title{
 		font-weight: 700;
 		color: var(--very-dark-violet);
 		margin-left: 5rem;
 	}
 	#navbar .title-tab{
+		position: unset;
+	    height: unset;
+	    width: unset;
+	    left: unset;
+	    top: unset;
+	    background: unset;
+	    text-align: unset;
+	    padding-top: unset;
+	    transition: unset;
+	    color: unset;
+	}
+	#navbar .title-tab{
 		display: flex;
-		margin: 1.5rem;
+		margin: 1.5rem 3rem 1.5rem 1.5rem;
+	}
+	#navbar .title-tab p{
+		margin-top: unset;
 	}
 	#navbar .tab-text{
 		font-size: 12px;
 		margin-top: 0.5rem;
 		margin-right: 2rem;
 		color: var(--grayish-blue);
+		padding-top: 0.5rem;
 	}
 	#navbar .tab-text:hover{
 		color: var(--very-dark-violet);
@@ -272,11 +383,11 @@ footer .details:hover{
 		cursor: pointer;
 	}
 	#navbar .view{
-		background-color: transparent;
 		color: var(--very-dark-violet);
-		padding: 0.5rem 1rem;
 		border: 1px solid var(--very-dark-violet);
 		margin-top: -5px;
+		width: unset;
+		margin: unset;
 	}
 	#navbar .view:hover{
 		background-color: var(--very-dark-violet);
